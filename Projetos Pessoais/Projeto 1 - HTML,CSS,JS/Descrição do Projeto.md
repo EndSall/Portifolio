@@ -1,61 +1,67 @@
-# Gerador de Memes: Tarefas e Objetivos
+## Gerador de Memes: Mãos à Obra com HTML, CSS e JavaScript\!
 
-## Objetivo 
- Criar um gerador de memes que permita aos usuários escolher imagens, inserir textos e personalizar a aparência dos seus próprios memes.
+**Objetivo:** Criar um gerador de memes que permita aos usuários escolher imagens, inserir textos e personalizar a aparência, com dificuldades graduais em cada linguagem.
 
-## Tarefas                
+## Etapas
 
-**HTML:**
+### Fase 1: Básico - HTML, CSS e JavaScript
 
-1.  **Criar a estrutura básica da página:**
-    *   Definir o título da página.
-    *   Criar as seções para a escolha da imagem, inserção de texto e personalização.
-    *   Adicionar elementos para exibir a imagem do meme e o resultado final.
+  * **HTML:**
+      * Criar a estrutura básica da página com `<h1>`, `<div>`, `<img>`, `<input>` (texto) e `<button>`.
+      * Definir um `<input type="file">` para upload de imagens.
+      * Usar `<label>` para os campos de texto.
+  * **CSS:**
+      * Estilizar a página com cores de fundo, fontes básicas e alinhamento de elementos com `text-align` e `display: block`.
+      * Ajustar o tamanho da imagem com `width` e `height`.
+  * **JavaScript:**
+      * Capturar os valores dos campos de texto com `.value`.
+      * Exibir a imagem selecionada no `<img>` usando `FileReader`.
+      * Criar uma função para juntar a imagem e os textos (pode ser com `canvas` ou uma biblioteca externa simples).
+      * Adicionar um botão para download da imagem final.
 
-2.  **Criar elementos interativos:**
-    *   Adicionar campos de input para o texto superior e inferior do meme.
-    *   Incluir opções para selecionar a imagem do meme (upload ou seleção de uma lista).
-    *   Criar botões para gerar o meme e fazer o download.
+### Fase 2: Intermediário - HTML, CSS e JavaScript
 
-**CSS:**
+  * **HTML:**
+      * Organizar o layout com `<div>` e classes para melhor estrutura.
+      * Adicionar mais opções de personalização: `<select>` para memes populares, `<input type="color">` para cores do texto, `<input type="range">` para tamanho da fonte.
+  * **CSS:**
+      * Utilizar Flexbox ou Grid para um layout mais responsivo.
+      * Aplicar estilos mais avançados: sombras (`box-shadow`), bordas arredondadas (`border-radius`), transições (`transition`) e pseudo-classes (`hover`).
+      * Estilizar os novos elementos de personalização.
+  * **JavaScript:**
+      * Capturar os valores dos novos elementos de personalização.
+      * Implementar a lógica para aplicar as personalizações no texto (cor, tamanho, fonte).
+      * Usar eventos para atualizar o meme em tempo real (`input`, `change`).
+      * Criar funções para salvar as configurações do usuário (opcional: usar `localStorage`).
 
-1.  **Estilizar a página:**
-    *   Definir cores, fontes e layout da página.
-    *   Estilizar os campos de input, botões e elementos interativos.
-    *   Garantir a responsividade da página para diferentes dispositivos.
+### Fase 3: Avançado - HTML, CSS e JavaScript
 
-2.  **Personalizar o texto do meme:**
-    *   Permitir a escolha da cor, tamanho e fonte do texto.
-    *   Posicionar o texto na imagem de forma flexível.
+  * **HTML:**
+      * Criar uma interface mais complexa com abas ou menus para diferentes seções.
+      * Adicionar recursos extras: arrastar e soltar elementos, upload de múltiplas imagens, criação de GIFs.
+  * **CSS:**
+      * Utilizar animações com `@keyframes`.
+      * Implementar um tema escuro/claro com `prefers-color-scheme`.
+      * Criar um design mais profissional e responsivo para diferentes dispositivos.
+  * **JavaScript:**
+      * Otimizar o código para melhor performance.
+      * Implementar lógica para os novos recursos (arrastar e soltar, GIFs).
+      * Integrar com APIs externas para buscar memes, fontes ou efeitos.
+      * Usar bibliotecas avançadas para manipulação de imagens (ex: Fabric.js).
+      * Adicionar testes unitários para garantir a qualidade do código.
 
-**JavaScript:**
+## Considerações:
 
-1.  **Manipular o DOM:**
-    *   Capturar os valores dos campos de input.
-    *   Exibir a imagem selecionada na área de visualização.
-    *   Inserir o texto na imagem do meme.
-    *   Atualizar a visualização do meme em tempo real.
+  * Documentar o código com comentários.
+  * Usar nomes descritivos para variáveis e funções.
+  * Organizar o código em arquivos separados (HTML, CSS, JavaScript).
+  * Utilizar versionamento de código (Git).
 
-2.  **Gerenciar eventos:**
-    *   Detectar a seleção da imagem.
-    *   Capturar as mudanças nos campos de input.
-    *   Processar o clique nos botões de gerar e baixar.
+## Recursos Adicionais:
 
-3.  **Implementar a lógica do gerador:**
-    *   Criar funções para gerar o meme com base nas opções do usuário.
-    *   Integrar as funcionalidades de personalização do texto.
-    *   Permitir o download do meme gerado.
+  * MDN Web Docs: [https://developer.mozilla.org/pt-BR/docs/Web](https://www.google.com/url?sa=E&source=gmail&q=https://developer.mozilla.org/pt-BR/docs/Web)
+  * W3Schools: [https://www.w3schools.com/](https://www.google.com/url?sa=E&source=gmail&q=https://www.w3schools.com/)
+  * Canva (para criar os memes): [https://www.canva.com/](https://www.google.com/url?sa=E&source=gmail&q=https://www.canva.com/)
+  * Imgur (para hospedar os memes): [https://imgur.com/](https://www.google.com/url?sa=E&source=gmail&q=https://imgur.com/)
 
-## Considerações adicionais
-
-*   Usar uma biblioteca de manipulação de imagens para facilitar o processo de inserção de texto na imagem (opcional).
-*   Integrar uma API externa para buscar imagens de memes populares (opcional).
-*   Implementar recursos adicionais como a escolha de diferentes layouts de texto ou a adição de filtros na imagem (opcional).
-
-## Divisão de tarefas
-
-Para facilitar o desenvolvimento, vocês podem dividir as tarefas entre si. Por exemplo, um pode focar no HTML e CSS, enquanto o outro se concentra no JavaScript.
-
-Lembrem-se de manter uma boa comunicação durante o processo e de se ajudarem mutuamente.
-
-_**Criado pelo GEMINI, com objetivo de estudo**_
+**Esse projeto foi criado pela IA GEMINI!** 🥳
