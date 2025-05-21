@@ -11,7 +11,7 @@ class Medico{
     static create(data,callback){
         db.query("INSERT INTO medicos set ?",data,callback)
     }
-    static updade(id,data,callback){
+    static update(id,data,callback){
         db.query("UPDATE medicos SET ? WHERE id = ?",[data,id],callback)
     }
     static delete(id,callback){

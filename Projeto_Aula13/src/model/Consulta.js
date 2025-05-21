@@ -11,7 +11,7 @@ class Consulta{
     static create(data,callback){
         db.query("INSERT INTO consultas set ?",data,callback)
     }
-    static updade(id,data,callback){
+    static update(id,data,callback){
         db.query("UPDATE consultas SET ? WHERE id = ?",[data,id],callback)
     }
     static delete(id,callback){
