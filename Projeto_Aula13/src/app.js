@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 
+app.use(express.json())
+
 //___Rotas___
 /* 
 const routesFront = require("./routes/routes_Front.js")
@@ -20,7 +22,6 @@ const routesProntuarios = require("./routes/routes_Prontuarios.js")
 app.use("/api/prontuarios",routesProntuarios)
 
 
-app.use(express.json())
 
 app.listen(PORT,()=>{
     console.log(`Servidor ligado: http://localhost:${PORT}`)
