@@ -19,7 +19,7 @@ const create = (req,res)=>{
     })
 }
 const update = (req,res)=>{
-    Consulta.update(req.params.id,(err,result)=>{
+    Consulta.update(req.params.id,req.body,(err,result)=>{
         if(err) return res.status(500).json({erro: err.message})
         res.json(result)
     })

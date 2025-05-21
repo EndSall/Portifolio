@@ -25,7 +25,7 @@ const update = (req,res)=>{
     })
 }
 const deletar = (req,res)=>{
-    Prontuario.delete(req.params.id,(err,result)=>{
+    Prontuario.delete(req.params.id,req.bory,(err,result)=>{
         if(err) return res.status(500).json({erro: err.message})
         res.json(result)
     })

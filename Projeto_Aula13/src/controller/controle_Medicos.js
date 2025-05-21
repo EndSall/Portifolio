@@ -19,7 +19,7 @@ const create = (req,res)=>{
     })
 }
 const update = (req,res)=>{
-    Medico.update(req.params.id,(err,result)=>{
+    Medico.update(req.params.id,req.body,(err,result)=>{
         if(err) return res.status(500).json({erro: err.message})
         res.json(result)
     })
