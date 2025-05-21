@@ -23,5 +23,5 @@ app.use("api/prontuarios",routesProntuarios)
 app.use(express.json())
 
 app.listen(PORT,()=>{
-    console.log(`Servidor ligado: http://localhost:${PORT}/`)
+    console.log(`Servidor ligado: http://localhost:${PORT}`)
 })

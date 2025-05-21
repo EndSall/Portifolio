@@ -3,7 +3,7 @@ const myslq = require("mysql2")
 const connection = myslq.createConnection({
     host:"localhost",
     user:"root",
-    password:"",
+    password:"root",
     database:"consultas_medicas"
 })
 
