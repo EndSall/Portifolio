@@ -1,6 +1,6 @@
 const express = require("express")
 const Router = express.Router()
-const controle = require("../controller/controll_Prontuarios.js")
+const controle = require("../controller/controle_Prontuarios.js")
 
 Router.get("/",controle.getAll) // pegar todos 
 Router.get("/:id",controle.getById) // pegar um 
