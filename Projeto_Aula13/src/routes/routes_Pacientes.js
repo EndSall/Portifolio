@@ -1,11 +1,11 @@
 const express = require("express")
 const Router = express.Router()
-const controle = require("../controller/controll_Pacientes.js")
+const controle = require("../controller/controle_Pacientes.js")
 
-Router.get("/",controle.getAllPacientes) // pegar todos 
-Router.get("/:id",controle.getPaciente) // pegar um 
-Router.post("/",controle.createPaciente) // criar um 
-Router.put("/:id",controle.updatePaciente) // atualizar um 
-Router.delete("/:id",controle.deletePaciente) // deletar um 
+Router.get("/",controle.getAll) // pegar todos 
+Router.get("/:id",controle.getById) // pegar um 
+Router.post("/",controle.create) // criar um 
+Router.put("/:id",controle.update) // atualizar um 
+Router.delete("/:id",controle.delete) // deletar um 
 
 module.exports = Router
