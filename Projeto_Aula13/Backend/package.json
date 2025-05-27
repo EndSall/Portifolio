@@ -2,7 +2,7 @@
   "name": "projeto_aula13",
   "version": "1.0.0",
   "description": "Projeto para treinamento de fim de semestre",
-  "main": "src/app.js",
+  "main": "backend/src/app.js",
   "directories": {
     "test": "test"
   },
